@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Twin Cities Animal Rescue</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+  <header>
+    <h1>Contact Twin Cities Animal Rescue</h1>
+  </header>
+
+  <main>
+    <p>Ready to join our lifesaving network? Reach out to our team or submit your interest below, and we will connect you with the right opportunity to make an impact.</p>
+    <h2>Volunteer & Foster Interest Form</h2>
+    <p>Take the first step toward making a tangible difference for animals in need. Fill out the details below, and our coordination team will reach out within 48 hours to discuss how you can help.
+      <form action="/contact" method="post">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Phone :</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter phone as 123-456-7890">
+        </fieldset>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required minlength="20" maxlength="1000"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </p>
+
+    <h2>Service Area</h2>
+    <p>We proudly serve the entire Twin Cities metropolitan area and its surrounding suburbs. Because our rescue is entirely foster-based, our network of volunteers and temporary homes spans the region. We regularly coordinate adoptions, freedom transports, and community supply drives throughout the local metro footprint.</p>
+
+    <h2>Office & Inquiry Hours</h2>
+    <p>Please note: Twin Cities Animal Rescue does not operate a centralized public shelter facility. All pet meet-and-greets are scheduled by appointment only after an adoption application is approved. Our administrative and coordination teams are available to process applications and answer online inquiries during the following hours:
+      <ul>
+        <li>Monday – Friday: 9:00 AM – 6:00 PM</li>
+        <li>Saturday: 10:00 AM – 4:00 PM (Primarily dedicated to weekend adoption events)</li>
+        <li>Sunday: Closed to public inquiries (Active foster support and emergency medical intake only)</li>
+      </ul>
+    </p>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Twin Cities Animal Rescue</p>
+  </footer>
+</body>
+</html>
