@@ -20,23 +20,45 @@
 
   <main>
     <p>Ready to join our lifesaving network? Reach out to our team or submit your interest below, and we will connect you with the right opportunity to make an impact.</p>
+    <img src="rescue-pet_c.png" alt="A rescue gerbil looking at camera" width="400">
     <h2>Volunteer & Foster Interest Form</h2>
     <p>Take the first step toward making a tangible difference for animals in need. Fill out the details below, and our coordination team will reach out within 48 hours to discuss how you can help.
       <form action="/contact" method="post">
         <fieldset>
-          <legend>Contact Information</legend>
-
-          <label for="name">Name</label>
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
           <input type="text" id="name" name="name" required minlength="2" maxlength="50">
-
-          <label for="email">Email</label>
+          <br><br>
+          <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
-          <label for="phone">Phone :</label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Enter phone as 123-456-7890">
         </fieldset>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required minlength="20" maxlength="1000"></textarea>
-        <button type="submit">Send</button>
+        <br>
+        <fieldset>
+          <legend>Involvement Interests</legend>
+          <label for="interest">Interest Type:</label>
+          <select id="interest" name="interest" required>
+            <option value="">--Please choose an option--</option>
+            <option value="volunteer">Volunteering</option>
+            <option value="foster">Fostering</option>
+            <option value="adoption">Adoption Information</option>
+          </select>
+          <br><br>
+          <p>General Availability:</p>
+          <input type="checkbox" id="avail-weekdays" name="availability" value="weekdays">
+          <label for="avail-weekdays">Weekdays</label><br>
+          <input type="checkbox" id="avail-weekends" name="availability" value="weekends">
+          <label for="avail-weekends">Weekends</label><br>
+          <input type="checkbox" id="avail-evenings" name="availability" value="evenings">
+          <label for="avail-evenings">Evenings</label>
+        </fieldset>
+        <br>
+        <label for="experience">Experience with Pets:</label><br>
+        <textarea id="experience" name="experience" rows="4" cols="50" required></textarea>
+        <br><br>
+        <label for="message">Short Message:</label><br>
+        <textarea id="message" name="message" rows="3" cols="50"></textarea>
+        <br><br>
+        <button type="submit">Submit Form</button>
       </form>
     </p>
 
