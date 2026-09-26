@@ -1,0 +1,45 @@
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #FFF8F0;
+  color: #2F2A26;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+.nav-link:hover {
+  background-color: #0066cc;
+  color: white;
+}
+.nav-link:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}
+
+.nav-link:active {
+  background-color: #002244;
+  color: white;
+}
